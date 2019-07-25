@@ -1,5 +1,7 @@
 #! /bin/sh
 
+# shadowsocks script for HND/AXHND router with kernel 4.1.27/4.1.51 merlin firmware
+
 sh /koolshare/ss/ssconfig.sh stop
 sh /koolshare/scripts/ss_conf.sh koolshare 3
 sleep 1
@@ -39,11 +41,12 @@ rm -rf /koolshare/bin/udp2raw
 rm -rf /koolshare/bin/v2ray
 rm -rf /koolshare/bin/v2ctl
 rm -rf /koolshare/bin/https_dns_proxy
+rm -rf /koolshare/bin/httping
 rm -rf /koolshare/bin/haveged
-#jq is used by another program, do not remove it
-#rm -rf /koolshare/bin/jq
 rm -rf /koolshare/res/icon-shadowsocks.png
 rm -rf /koolshare/res/ss-menu.js
+rm -rf /koolshare/res/qrcode.js
+rm -rf /koolshare/res/tablednd.js
 rm -rf /koolshare/res/all.png
 rm -rf /koolshare/res/gfw.png
 rm -rf /koolshare/res/chn.png
